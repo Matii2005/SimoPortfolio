@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simo – Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- 3D viewer -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- NAVBAR -->
+        <header class="navbar">
+            <div class="navbar__logo">
+                <span>SimoDevv</span>
+            </div>
+
+            <nav class="navbar__links">
+                <a href="#about" class="navbar__link">About me</a>
+                <a href="#games" class="navbar__link">My projects</a>
+                <a href="#plugins" class="navbar__link">My plugins</a>
+                <a href="#contact" class="btn-primary">Contact me ↗</a>
+            </nav>
+        </header>
+
+        <!-- ABOUT -->
+        <section id="about" class="section">
+            <div class="section-heading">
+                <h1>About <span>me</span></h1>
+                <p>
+                    Hi! I’m Simo, a 19-year-old Roblox developer from Italy.
+                    I studied Computer Science in high school and earned my diploma,
+                    now I'm currently studying computer science at university. I specialize
+                    in fullstack development with Roblox Luau, and I also have experience with 
+                    several other programming languages, including Java, JS, C++, and Python. I
+                    began developing on Roblox in June 2022 as a scripter. Thanks to my prior programming 
+                    knowledge, I was able to quickly grow my skills, and I now have 3 years of experience
+                    in scripting within the Roblox ecosystem.
+                </p>
+            </div>
+        </section>
+
+        <!-- MY PROJECTS -->
+        <section id="games" class="section">
+            <div class="section-heading">
+                <h2>My <span>projects</span></h2>
+            </div>
+
+            <!-- PROJECT BUTTONS -->
+            <div class="projects-tabs">
+                <button class="project-tab active" data-project="project1">Horror Game</button>
+                <button class="project-tab" data-project="project2">Clickmare Horror</button>
+                <button class="project-tab" data-project="project3">BallTogether 2P Obby</button>
+                <button class="project-tab" data-project="project4">RNG Game</button>
+                <button class="project-tab" data-project="project5">Soccer Simulator</button>
+                <button class="project-tab" data-project="project6">Other systems</button>
+            </div>
+
+            <!-- PROJECT 1 -->
+            <div id="project1" class="project-panel active">
+                <h3 class="project-title">Horror Game</h3>
+                <div class="media-grid">
+                    <div class="video-box">
+                        <video src="MainMenu_wweydw.mp4" controls></video>
+                        <p class="media-caption">Cinematic main menu with camera movement</p>
+                    </div>
+
+                    <div class="video-box">
+                        <video src="Recording_2025-11-23_034138_ixizre.mp4" controls></video>
+                        <p class="media-caption">Enemy pathfinding and AI behaviour showcase</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 2 -->
+            <div id="project2" class="project-panel">
+                <h3 class="project-title">Clickmare Horror Game</h3>
+                <div class="media-grid">
+                    <div class="video-box">
+                        <video src="Curtains_bycdxf.mp4" controls></video>
+                        <p class="media-caption">Dynamic curtain jumpscare animation</p>
+                    </div>
+
+                    <div class="video-box">
+                        <video src="Base_vmec53.mp4" controls></video>
+                        <p class="media-caption">Main base environment – lighting & ambience</p>
+                    </div>
+
+                    <div class="video-box">
+                        <video src="Event_zarcra.mp4" controls></video>
+                        <p class="media-caption">Special in-game event sequence</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 3 -->
+            <div id="project3" class="project-panel">
+                <h3 class="project-title">BallTogether 2 Player Obby (SOLD)</h3>
+                <div class="media-grid">
+                    <div class="video-box">
+                        <video src="Movement_i56uub.mp4" controls></video>
+                        <p class="media-caption">Co-op movement and ball control system</p>
+                    </div>
+
+                    <div class="video-box">
+                        <video src="Friction_mjuxqv.mp4" controls></video>
+                        <p class="media-caption">Ice friction & sliding mechanics</p>
+                    </div>
+
+                    <div class="video-box">
+                        <video src="Mine_lmfba7.mp4" controls></video>
+                        <p class="media-caption">Mine placement and explosion system</p>
+                    </div>
+
+                    <div class="video-box">
+                        <video src="Preview_qjqxbf.mp4" controls></video>
+                        <p class="media-caption">Full gameplay preview of the obby</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 4 -->
+            <div id="project4" class="project-panel">
+                <h3 class="project-title">RNG Game (unfinished & cancelled)</h3>
+                <div class="media-grid">
+                    <div class="video-box">
+                        <video src="Showcase_xuolcl.mp4" controls></video>
+                        <p class="media-caption">World exploration & RNG effects preview</p>
+                    </div>
+
+                    <div class="video-box">
+                        <video src="npc_pdteml.mp4" controls></video>
+                        <p class="media-caption">Interactive NPC dialogue and behaviour</p>
+                    </div>
+
+                    <div class="video-box">
+                        <video src="Cutscene_u3z8or.mp4" controls></video>
+                        <p class="media-caption">Intro cinematic cutscene</p>
+                    </div>
+
+                    <div class="image-box">
+                        <img src="Thumbnail.jpg" alt="RNG thumbnail">
+                        <p class="media-caption">Original thumbnail concept for the game</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 5 -->
+            <div id="project5" class="project-panel">
+                <h3 class="project-title">Soccer Simulator</h3>
+                <div class="media-grid">
+                    <div class="video-box">
+                        <video src="Showcase_qhl2lx.mp4" controls></video>
+                        <p class="media-caption">Dribbling and player movement system</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 6 -->
+            <div id="project6" class="project-panel">
+                <h3 class="project-title">Other systems & prototypes</h3>
+                <div class="media-grid">
+                    <div class="video-box">
+                        <video src="PunchBall_ze7qkr.mp4" controls></video>
+                        <p class="media-caption">PunchBall mechanic – hit & bounce system</p>
+                    </div>
+
+                    <div class="video-box">
+                        <video src="CarrySystem_wzirfy.mp4" controls></video>
+                        <p class="media-caption">Carry & throw teammates system</p>
+                    </div>
+
+                    <div class="video-box">
+                        <video src="Compass_cbcgob.mp4" controls></video>
+                        <p class="media-caption">Advanced compass using trigonometry</p>
+                    </div>
+
+                    <div class="video-box">
+                        <video src="FightSystem_cpu2ey.mp4" controls></video>
+                        <p class="media-caption">Combat system inspired by HBG</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MY PLUGINS -->
+        <section id="plugins" class="section">
+            <div class="section-heading">
+                <h2>My <span>plugins</span></h2>
+            </div>
+
+            <div class="plugins-grid">
+                <!-- PLUGIN 1 -->
+                <a href="https://create.roblox.com/store/asset/82522986593090" class="plugin-card" target="_blank">
+                    <img src="SetMassPlugin.png" alt="Plugin 1" class="plugin-image">
+                    <p class="plugin-title">SetMassPlugin</p>
+                </a>
+
+                <!-- PLUGIN 2 -->
+                <a href="https://devforum.roblox.com/t/luau-schema-validator-lsv/3426387" class="plugin-card" target="_blank">
+                    <img src="Luau Validator.png" alt="Plugin 2" class="plugin-image">
+                    <p class="plugin-title">Luau Schema Validator</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- AVATAR + TIME -->
+        <section id="avatar-section" class="section avatar-section">
+            <div class="section-heading">
+                <h2>Contact <span>me</span></h2>
+            </div>
+
+            <div class="avatar-wrapper">
+                <model-viewer
+                    src="avatar.glb"
+                    alt="My Roblox avatar 3D"
+                    auto-rotate
+                    camera-controls
+                    disable-zoom
+                    class="avatar-3d"
+                    shadow-intensity="0.8"
+                    environment-image="neutral">
+                </model-viewer>
+            </div>
+
+            <p class="time-label">My current time is</p>
+            <p id="clock" class="time-value">00:00:00</p>
+        </section>
+
+        <!-- CONTACT BUTTONS -->
+        <section id="contact" class="section contact-section">
+            <div class="socials">
+                <a class="social-btn social-btn--discord" href="https://discord.com" target="_blank">
+                    <img src="discord-icon.png" alt="Discord icon" class="social-icon">
+                    <span>Discord</span>
+                </a>
+
+                <a class="social-btn social-btn--roblox" href="https://www.roblox.com/" target="_blank">
+                    <img src="roblox-icon.png" alt="Roblox icon" class="social-icon">
+                    <span>Roblox</span>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <script>
+    
+        const projectTabs = document.querySelectorAll(".project-tab");
+        const projectPanels = document.querySelectorAll(".project-panel");
+
+        projectTabs.forEach(tab => {
+            tab.addEventListener("click", () => {
+                const targetId = tab.dataset.project;
+
+                projectTabs.forEach(t => t.classList.remove("active"));
+                projectPanels.forEach(panel => panel.classList.remove("active"));
+
+                tab.classList.add("active");
+                document.getElementById(targetId).classList.add("active");
+            });
+        });
+
+        // Time
+        function updateClock() {
+            const clockEl = document.getElementById("clock");
+            const now = new Date();
+            const h = String(now.getHours()).padStart(2, "0");
+            const m = String(now.getMinutes()).padStart(2, "0");
+            const s = String(now.getSeconds()).padStart(2, "0");
+            clockEl.textContent = `${h}:${m}:${s}`;
+        }
+        updateClock();
+        setInterval(updateClock, 1000);
+    </script>
+</body>
+</html>
